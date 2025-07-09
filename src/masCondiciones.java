@@ -30,10 +30,20 @@ public class masCondiciones {
         System.out.println("Introduce el segundo String");
         String second = reader.nextLine();
 
-        if (first.equals(second)) {
+        if (first.equals(second)) { // Aquí no se pone ==
             System.out.println("Mismo String");
         } else {
             System.out.println("Diferentes String");
+        }
+
+
+        System.out.println("Escribe un String");
+        String input = reader.nextLine();
+
+        if (input.equals("un string")) { // Comprueba si lo que el usuario escribió fue exactamente esto
+            System.out.println("¡Correcto!");
+        } else {
+            System.out.println("¡Incorrecto!");
         }
     }
 }
