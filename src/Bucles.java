@@ -27,6 +27,6 @@ public class Bucles {
         }
 
         // Cuando salimos del bucle, mostramos la suma total de los 5 números introducidos
-        System.out.println("La suma de los números es " + suma);
+        System.out.println("La suma de los números es " + suma); 
     }
 }
