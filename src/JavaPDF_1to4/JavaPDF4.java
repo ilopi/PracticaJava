@@ -1,11 +1,13 @@
+package JavaPDF_1to4;
+
 // ──────────────────────────────────────
-// CLASE JavaPDF4 → Contiene el metodo main()
-// Se usa para probar la clase JavaPDF3
+// CLASE JavaPDF_1to4.JavaPDF4 → Contiene el metodo main()
+// Se usa para probar la clase JavaPDF_1to4.JavaPDF3
 // ──────────────────────────────────────
 public class JavaPDF4 {
 
     public static void main(String[] args) {
-        // Crear un objeto de tipo JavaPDF3 (nombre y edad iniciales)
+        // Crear un objeto de tipo JavaPDF_1to4.JavaPDF3 (nombre y edad iniciales)
         JavaPDF3 persona = new JavaPDF3("Laura", 25);
 
         // Mostrar los datos actuales (usa showInfo)

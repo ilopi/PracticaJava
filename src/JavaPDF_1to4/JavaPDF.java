@@ -1,3 +1,5 @@
+package JavaPDF_1to4;
+
 import java.util.Scanner; // Para introducir valores por consola
 
 public class JavaPDF {

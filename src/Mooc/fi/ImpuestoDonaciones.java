@@ -1,3 +1,5 @@
+package Mooc.fi;
+
 import java.util.Scanner;
 
 public class ImpuestoDonaciones {

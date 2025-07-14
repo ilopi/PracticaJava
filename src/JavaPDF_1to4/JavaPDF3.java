@@ -1,4 +1,6 @@
-// Definimos la clase JavaPDF3
+package JavaPDF_1to4;
+
+// Definimos la clase JavaPDF_1to4.JavaPDF3
 public class JavaPDF3 {
 
     // ───────────────────────────────

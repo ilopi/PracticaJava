@@ -1,8 +1,8 @@
-// Importamos la clase Scanner del paquete java.util
+package Mooc.fi;// Importamos la clase Scanner del paquete java.util
 // Scanner nos permite leer datos que escribe el usuario por teclado
 import java.util.Scanner;
 
-// Declaramos una clase pública llamada 'Mensaje'
+// Declaramos una clase pública llamada 'Mooc.fi.Mensaje'
 public class Mensaje {
 
     // Punto de entrada del programa

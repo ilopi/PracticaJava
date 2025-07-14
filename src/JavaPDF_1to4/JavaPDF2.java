@@ -1,3 +1,5 @@
+package JavaPDF_1to4;
+
 import java.util.Scanner;
 
 public class JavaPDF2 {
@@ -12,7 +14,7 @@ public class JavaPDF2 {
         System.out.println("Escribe tu edad: ");
         int edad = Integer.parseInt(reader.nextLine()); // Leer edad desde consola
 
-        // Condicionales anidados para clasificar por edades
+        // Mooc.fi.Condicionales anidados para clasificar por edades
         if (edad < 13) {
             System.out.println("Eres un niño.");
         } else if (edad < 18) {
