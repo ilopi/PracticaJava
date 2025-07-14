@@ -1,42 +1,43 @@
-import java.util.Scanner;
+import java.util.Scanner; // Para introducir valores por consola
 
 public class JavaPDF {
 
     public static void main(String[] args) {
 
-        /* Todos los wrappers (excepto Boolean) disponen
-        de los valores máximos y mínimos: */
-
+        // ───────────────────────────────
+        // 1. WRAPPERS: valores máximos y mínimos
+        // ───────────────────────────────
+        // Todos los wrappers (excepto Boolean) tienen valores máximos y mínimos definidos
         Float minFloat = Float.MIN_VALUE;
         Integer maxInteger = Integer.MAX_VALUE;
 
+        System.out.println("Máximo Integer y mínimo Float:");
         System.out.println(maxInteger + " y " + minFloat);
 
+        // ───────────────────────────────
+        // 2. ENTRADA POR TECLADO CON SCANNER
+        // ───────────────────────────────
         Scanner reader = new Scanner(System.in); // Creamos un lector para la entrada por teclado
 
+        // Leemos un número directamente con parseo incluido
         System.out.println("Escribe el numero1: ");
-
         int numero1 = Integer.parseInt(reader.nextLine());
 
-        /* También podemos hacer (más largo): */
-
+        // Alternativa: leer como String y luego convertir
         System.out.println("Escribe el numero2: ");
-
         String numero2 = reader.nextLine();
-
         int numero2_entero = Integer.parseInt(numero2); // Conversion
 
+        // ───────────────────────────────
+        // 3. AUTOBOXING
+        // ───────────────────────────────
+        Character ch = 'a'; // Autoboxing: meter un tipo primitivo (char) en su clase wrapper (Character)
 
-        /* Autoboxing (Envolver objeto): */
-
-        Character ch = 'a'; //Estamos metiendo un char en un Character
-
-
-        /* Arrays: */
-
-        int[] unArray; // Definir el array del tipo de dato
-
-        unArray = new int[10]; // Cantidad de elementos que va a almacenar
+        // ───────────────────────────────
+        // 4. ARRAYS SIMPLES
+        // ───────────────────────────────
+        int[] unArray;                   // Declarar un array
+        unArray = new int[10];          // Inicializar con tamaño 10
 
         int[] otroArray = new int[10]; // Declarar e inicializar a la vez
 
@@ -57,18 +58,21 @@ public class JavaPDF {
                 700, 800, 900, 1000
         }; // Otra sintaxis para inicializar
 
+        // ───────────────────────────────
+        // 🖨️ 5. IMPRIMIR ARRAYS
+        // ───────────────────────────────
+        // Forma manual (una posición específica)
+        System.out.println("Forma manual: Elemento del índice 1: " + unArray[1]);
 
-        /* Formas de imprimir un Array: */
+        // Forma con bucle for
+        System.out.println("Recorriendo array con for:");
+        for (int i = 0; i < unArray.length; i++) {
+            System.out.println("Elemento del índice " + i + ": " + unArray[i]);
+        }
 
-        System.out.println("Forma manual: Elemento del índice 1: " + unArray[1]); // Manual
-
-        for(int i = 0; i < unArray.length; i++) {
-            System.out.println("Con for: Elemento del índice " + i + ": " + unArray[i]);
-        } // Con bucle for
-
-
-        /* Arrays Multidimensionales: */
-
+        // ───────────────────────────────
+        // 6. ARRAYS MULTIDIMENSIONALES
+        // ───────────────────────────────
         String[][] names = {
                 {"Mr.", "Mrs. ", "Ms. "},
                 {"Smith", "Jones"}
@@ -90,13 +94,14 @@ public class JavaPDF {
         *   -> names[1][1] → "Jones"
         * */
 
-
-        /* Copiar Arrays: */
+        // ───────────────────────────────
+        // 7. COPIAR ARRAYS CON System.arraycopy()
+        // ───────────────────────────────
 
         String[] todosLosEstudiantes = {"Ana", "Luis", "Marta", "Juan", "Carlos"}; // Creamos un array con todos los estudiantes
         String[] aprobados = new String[3]; // Creamos otro array donde vamos a copiar solo a los 3 primeros (los aprobados)
 
-        // Usar System.arraycopy para copiar los 3 primeros estudiantes a "aprobados"
+        // Copiamos desde índice 0 de origen al índice 0 de destino, 3 elementos
 
         System.arraycopy(todosLosEstudiantes, 0, aprobados, 0, 3);
 
