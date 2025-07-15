@@ -25,7 +25,7 @@ public class Store {
     public void mostrarCatalogo() {
         System.out.println("\nCatálogo de libros: ");
         for (int i = 0; i < catalogo.length; i++) {
-            System.out.println((i + i) + ". " + catalogo[i].title() + " - " + catalogo[i].author() + " (" + catalogo[i].price() + "$)");
+            System.out.println((i + 1) + ". " + catalogo[i].title() + " - " + catalogo[i].author() + " (" + catalogo[i].price() + "$)");
         }
     }
 

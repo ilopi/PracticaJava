@@ -15,7 +15,7 @@ public class Main {
         System.out.println("\nIntroduce el número del libro que quieres comprar: ");
         int indice = Integer.parseInt(scanner.nextLine());
 
-        Book libroSeleccionado = store.getLibroPorIndice(indice);
+        Book libroSeleccionado = store.getLibroPorIndice(indice - 1);
         System.out.println("\nHas elegido: " + libroSeleccionado.title());
 
         System.out.println("\nElige el método de pago (1 o 2): ");
