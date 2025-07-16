@@ -30,7 +30,7 @@ public class Generics {
         // Recorremos la lista usando un bucle for-each
         System.out.println("\nTodos los usuarios:");
         for (Usuario u : usuarios) {
-            System.out.println(u); // Se mostrará el resultado del método toString de Usuario
+            System.out.println(u); // Se mostrará el resultado del metodo toString de Usuario
         }
 
     }
